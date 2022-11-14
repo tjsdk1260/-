@@ -1,0 +1,16 @@
+body,html{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;}
+:root{
+    --color-green:#d6e8f2;
+    --color-blue:#003964;
+}
+header{
+    height: 130px;
+    background-color: red;
+}
+
+@media screen and (max-width:768px){
+}
