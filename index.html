@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66c9b6e88e.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +15,7 @@
             <div class="logo">
                 <a href="#"><img src="./image/s_image/logo.png" alt="logo"></a>
             </div>
-            <div class="gnb">
+            <nav class="gnb">
                 <ul class="gnb-list">
                     <li><a href="#">연구원소개</a>
                         <ul class="drop-menu">
@@ -88,28 +89,167 @@
                         </ul>
                     </li>
                 </ul>
+            </nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
-        <div class="mobile">
-            <div class="hamburger" style="display:none;
-            ">hamburger menu</div>
-            <div class="mobile-gnb" style="display:none;
-            ">mobile gnb</div>
+            <nav class="mobile" style="display:none;">
+                <div class="title">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">home</a>
+                    <div class="close-gnb">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="mobile-gnb">
+                    <ul>
+                        <li><a href="#">연구원소개</a>
+                            <ul class="mobile-drop-menu" style="display: none;">
+                                <li><i class="fa-solid fa-house"></i><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">설립 목적 및 기능</a></li>
+                                <li><a href="#">비전 및 목표</a></li>
+                                <li><a href="#">책임운영기관 제도 소개</a></li>
+                                <li><a href="#">조직 및 직원</a></li>
+                                <li><a href="#">오시는길</a></li>
+                                <li><a href="#">연구원홍보</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">부서안내</a>
+                            <ul class="mobile-drop-menu"style="display:none;">
+                                <li><a href="#">연구기획과</a></li>
+                                <li><a href="#">안전연구실</a></li>
+                                <li><a href="#">방재연구실</a></li>
+                                <li><a href="#">재난정보연구실</a></li>
+                                <li><a href="#">재난원인조사실</a></li>
+                                <li><a href="#">지진방재센터</a></li>
+                                <li><a href="#">R&D 관리평가센터</a></li>
+                                <li><a href="#">사회재난연구센터</a></li>
+                                <li><a href="#">방재기준평가센터</a></li>
+                                <li><a href="#">국가통합가뭄센터</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">연구실적</a>
+                            <ul class="mobile-drop-menu"style="display:none;">
+                                <li><a href="#">연구보고서</a></li>
+                                <li><a href="#">현장조사보고</a></li>
+                                <li><a href="#">학술활동보고</a></li>
+                                <li><a href="#">논문</a></li>
+                                <li><a href="#">특허</a></li>
+                                <li><a href="#">주요성과물</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">국제업무</a>
+                            <ul class="mobile-drop-menu"style="display:none;">
+                                <li><a href="#">UNESCAP/WMO 태풍위원회</a></li>
+                                <li><a href="#">ODA 사업 및 기술지원</a></li>
+                                <li><a href="#">국제공동연구</a></li>
+                                <li><a href="#">국제방재협력세미나</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">홍보마당</a>
+                            <ul class="mobile-drop-menu"style="display:none;">
+                                <li><a href="#">재난안전지</a></li>
+                                <li><a href="#">SNS 재난이슈분석</a></li>
+                                <li><a href="#">Future Safety Issue</a></li>
+                                <li><a href="#">재난안전 Policy Review</a></li>
+                                <li><a href="#">뉴스레터</a></li>
+                                <li><a href="#">재난안전연구데이터 Trend Report</a></li>
+                                <li><a href="#">동영상자료</a></li>
+                                <li><a href="#">포토갤러리</a></li>
+                                <li><a href="#">언론보도</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">알림마당</a>
+                            <ul class="mobile-drop-menu" style="display:none;">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">채용공고</a></li>
+                                <li><a href="#">입찰용역</a></li>
+                                <li><a href="#">정보공개</a></li>
+                                <li><a href="#">사전정보 공표</a></li>
+                                <li><a href="#">관련법령</a></li>
+                                <li><a href="#">재난지식</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">안전신문고</a></li>
+                                <li><a href="#">일반민원신청</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
     <main>
         <section class="main-section">
-            <div class="img-slide">2.1</div>
+            <div class="img-slide">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <div class="slidewrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a href="#">
+                                <label for="slide04" class="left"></label>
+                                <img src="" alt="">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <label for="slide01" class="left"></label>
+                                <img src="" alt="">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <label for="slide02" class="left"></label>
+                                <img src="" alt="">
+                                <label for="slide04" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <label for="slide03" class="left"></label>
+                                <img src="" alt="">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div id="wrap">
                 <div class="button">
                     <button>연구원 방문신청</button>
                 </div>
                 <div class="quick-menu">
                     <ul>
-                        <li>2.3.1</li>
-                        <li>2.3.2</li>
-                        <li>2.3.3</li>
-                        <li>2.3.4</li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <span>조직도</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <span>오시는길</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <span>뉴스레터</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div></div>
+                                <span>재난지식</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +258,7 @@
             <label for="search">
                 <input type="text" id="serach">
             </label>
-            <a href="#">icon</a>
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
            </div>
         <section class="wrap">
             <div class="board">공지사항</div>
@@ -143,22 +283,23 @@
     <footer>
         <div class="link">
             <ul class="link-list">
-                <li class="link-item">개인정보처리방침</li>
-                <li class="link-item">영상정보처리기기운영 및 관리방침</li>
-                <li class="link-item">facebook</li>
-                <li class="link-item">youtube</li>
+                <li class="link-item"><a href="#">개인정보처리방침</a></li>
+                <li class="link-item"><a href="#">영상정보처리기기운영 및 관리방침</a></li>
+                <li class="link-item"><a href="#">facebook</a></li>
+                <li class="link-item"><a href="#">youtube</a></li>
             </ul>
         </div>
         <div class="footer-wrap">
-            <div class="footer-logo">logo</div>
-            <div class="info">
-                <div>주소&전화번호&이메일</div>
-                <div>copyright</div>
+            <div class="footer-logo">
+                <img src="./image/s_image/logo.png" alt="footer_logo">
             </div>
-            
+            <div class="info">
+                <div>우)44538 울산광역시 중구 종가로 365 국립재난안전연구원 / 052-928-8000 / ndmi@korea.kr</div>
+                <div>Copyright &copy; 2013 by National Disaster Management Research Institute. All Rights Reserved.</div>
+            </div>
         </div>
     </footer>
 </div>  
-<div class="go-top">go top</div>
+<div class="go-top"><i class="fa-solid fa-chevron-up"></i></div>
 </body>
 </html>
