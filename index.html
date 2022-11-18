@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/66c9b6e88e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/66c9b6e88e.js"crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -183,25 +183,27 @@
     <main>
         <section class="main-section">
             <div class="img-slide">
-                <div class="slidewrap">
-                    <ul class="slidelist">
-                       <li class="slideitem">
-                        <label for="slide01"></label>
-                        <img src="./image/p_image/팝업이미지_1.jpg" alt="안전맵핑">
-                       </li>
-                       <li class="slideitem">
-                        <label for="slide02"></label>
-                        <img src="./image/p_image/팝업이미지_2.jpg" alt="지진방재콘텐츠 공유포털">
-                       </li>
-                       <li class="slideitem">
-                        <label for="slide03"></label>
-                        <img src="./image/p_image/팝업이미지_3.jpg" alt="국립재난안전연구원">
-                       </li>
-                    </ul>
+                <div class="slide-wrap">
+                    <div class="slide-list">
+                        <div class="slide-item">
+                            <img src="./image/p_image/팝업이미지_1.jpg" alt="안전맵핑">
+                        </div>
+                        <div class="slide-item">
+                            <img src="./image/p_image/팝업이미지_2.jpg" alt="지진방재센터">
+                        </div>
+                        <div class="slide-item">
+                            <img src="./image/p_image/팝업이미지_3.jpg" alt="국립재난안전연구원">
+                        </div>
+                    </div>
                 </div>
-                <input type="radio" name="slide" id="slide01" checked>
+                <div class="controls">    
+                    <button id="slide01"></button>
+                    <button id="slide02"></button>
+                    <button id="slide03"></button>
+                </div>
+                <!-- <input type="radio" name="slide" id="slide01" checked>
                 <input type="radio" name="slide" id="slide02">
-                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide03"> -->
             </div>
             <div id="wrap">
                 <div class="button">
@@ -302,5 +304,6 @@
     </footer>
 </div>  
 <div class="go-top"><i class="fa-solid fa-chevron-up"></i></div>
+<script src="index.js"></script>
 </body>
 </html>

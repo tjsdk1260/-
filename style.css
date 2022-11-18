@@ -124,7 +124,7 @@ a{text-decoration: none;}
     grid-column: 2/4;
     grid-row: 2/4;
 }
-.img-slide>input[type="radio"],
+/* .img-slide>input[type="radio"],
 .img-slide>input[type="radio"]:checked{
     appearance: none;
     width: 13px;
@@ -137,27 +137,40 @@ a{text-decoration: none;}
 }
 .img-slide>input[type="radio"]:checked{
     background-color: var(--color-blue);
+} */
+.slide-wrap{
+   overflow: hidden;
 }
-.img-slide>.slidewrap{
-    max-width: 455px;
-    overflow: hidden;
-    width: 455px;
+.slide-list{
+    width: 1275px;
     height: 300px;
-    border-radius: 30px;
+    transition: transform .5s;
 }
-.slidewrap>.slidelist{
-    white-space: nowrap;
-    font-size: 0;
-}
-.slideitem{
+.slide-list>.slide-item{
+    width: 425px;
+    height: 300px;
     float: left;
 }
-.slideitem>img{
-   max-width:100%;
+.slide-item>img{
+    width: 100%;
 }
 .main-section>#wrap{
     grid-column: 4/6;
     grid-row: 2/4;
+}.controls{
+    width: 60px;
+    margin: 0 auto;
+}
+.controls>button{
+    border: none;
+    outline: none;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #727272;
+}
+#slide01{
+    background-color: var(--color-blue);
 }
 .main-section>#wrap button{
     border: none;
