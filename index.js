@@ -8,13 +8,13 @@ slide1.addEventListener('click',function(){
     slide3.style.background = '#727272';
 });
 slide2.addEventListener('click',function(){
-    slideList.style.transform = "translateX(-425px)";
+    slideList.style.transform = "translateX(-550px)";
     slide2.style.background = "var(--color-blue)";
     slide1.style.background = '#727272';
 });
 
 slide3.addEventListener('click',function(){
-    slideList.style.transform = "translateX(-850px)";
+    slideList.style.transform = "translateX(-1100px)";
     slide3.style.background = 'var(--color-blue)';
     slide1.style.background = '#727272';
     slide2.style.background = '#727272';
