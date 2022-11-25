@@ -48,15 +48,24 @@ function moveSlide(num){
     currentIdx = num;
 };
 
+preBtn.addEventListener('click',function(){
+    if(currentIdx > 0){
+        moveSlide(currentIdx - 1);
+    }else{
+        moveSlide(slideCount -5);
+    }
+   
+});
+
 nextBtn.addEventListener('click',function(){
-    if(currentIdx < slideCount - 1){
+    if(currentIdx < slideCount - 5){
         moveSlide(currentIdx + 1);
     }else{
         moveSlide(0);
     }
    
 });
-
+//부서안내 슬라이드
 const goTop = document.querySelector('.go-top');
 
 goTop.addEventListener('click',function(){
@@ -65,3 +74,4 @@ goTop.addEventListener('click',function(){
         behavior:"smooth"
     });
 });
+//gotop 버튼
