@@ -24,11 +24,16 @@ const mobileGnb = document.querySelector(".mobile");
 
 clickMenu.addEventListener('click',()=>{
    mobileGnb.classList.toggle('on');
+   clickMenu.classList.toggle('on');
 });
 //모바일 클릭 메뉴
+
+
+//공지사항
+
 const slides = document.querySelector(".department-list");
 const slide = document.querySelectorAll(".department-list li");
-const currentIdx = 0;
+let currentIdx = 0;
 const slideCount = slide.length;
 const slideWidth = 230;
 const slideMargin = 30;
@@ -38,6 +43,7 @@ const nextBtn = document.querySelector('.next');
 slides.style.width = (slideWidth + slideMargin)*slideCount - slideMargin + 'px';
 
 function moveSlide(num){
+    console.log(num);
     slides.style.left = -num * 260 + 'px';
     currentIdx = num;
 };
