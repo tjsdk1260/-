@@ -28,6 +28,22 @@ clickMenu.addEventListener('click',()=>{
 });
 //모바일 클릭 메뉴
 
+let boardTitles = document.querySelectorAll('.board-title');
+
+for(var i=0 ; i<boardTitles.length ; i++) {
+    boardTitles[i].addEventListener('click',function(){
+        boardTitle = ['공지사항', '채용공고', '입찰용역', '현장조사보고','기타 알림사항'];
+        var idx = boardTitle.indexOf(this.innerText);
+        for(var j=0; j<5; j++)
+            boardTitles[j].classList.remove('active');
+            boardTitles[idx].classList.add('active');
+        for(var j=1 ; j<=5 ; j++) {
+            if(idx+1 == j) document.getElementsByClassName(`item${j}`)[0].style.display = 'block';
+            else document.getElementsByClassName(`item${j}`)[0].style.display = 'none';
+        }
+    });
+
+};
 
 //공지사항
 
