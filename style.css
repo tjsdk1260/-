@@ -5,6 +5,9 @@
     -moz-box-sizing: border-box;}
 body{font-family: 'Noto Sans', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;}
+body::-webkit-scrollbar {
+    display: none;
+}
 li{list-style: none;}
 a{text-decoration: none;}
 :root{
@@ -134,9 +137,9 @@ a{text-decoration: none;}
     width: 260px;
     height: 100%;
     background-color: #fff;
-    transition: right .4 ease-in-out;
 }
 .mobile.on{
+    transition: right .4 ease-in-out;
     right: 0;
 }
 .mobile>.title{
@@ -157,7 +160,6 @@ a{text-decoration: none;}
     border-bottom: 1px solid #eee;
 }
 .mobile-gnb>ul>li>a{
-    border: 1px solid red;
     padding: 15px 20px;
 }
 .mobile-gnb li>a{
@@ -196,19 +198,24 @@ a{text-decoration: none;}
     height: 360px;
     border-radius: 30px;
     overflow: hidden;
-
+    margin: 0 auto;
 }
 .slide-list{
-    width: 1650px;
-    height: 360px;
+    width: 300%;
+    height: 100%;
+    /* width: 1650px;
+    height: 360px; */
     transition: transform .5s;
 }
 .slide-list>.slide-item{
-    width: 550px;
-    height: 360px;
+    width: 33.33334%;
+    height: 100%;
+    /* width: 550px;
+    height: 360px; */
     float: left;
 }
 .slide-item>img{
+    max-width: 100%;
     width: 100%;
 }
 .main-section>#wrap{
@@ -218,7 +225,7 @@ a{text-decoration: none;}
 .controls{
     width: 550px;
     text-align: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 .controls>button{
     border: none;
@@ -240,7 +247,7 @@ a{text-decoration: none;}
 .main-section>.button button{
     border: none;
     outline: none;
-    width: 335px;
+    width: 330px;
     height: 76px;
     border-radius: 60px;
     transition: background-color 1s;
@@ -342,7 +349,8 @@ a{text-decoration: none;}
     margin-right: 15px;
     display: inline-block;
     cursor: pointer;
-    font-size: 18px;}
+    font-size: 18px;
+    color: #727272;}
 .board-title::before{
     content: "";
     display: block;
@@ -550,7 +558,37 @@ footer>.link{
     bottom: 20px;
     text-align: center;
     cursor: pointer;
-}
+} 
+@media screen and (max-width:1400px){
+    .main-section>.button{
+        margin-top: 84px;
+        grid-row: 1/3;}
+    .quick-menu{
+        margin-top: 65px;
+        grid-row: 2/4;
+    }
+    .quick-menu>ul{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .quick-menu>ul>li{
+        margin-top:13px;
+    }
+} 
+@media screen and (max-width:1240px){
+    .main-section{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .quick-menu{
+        margin-bottom: 30px;
+    }
+    .quick-menu>ul{
+        width: auto;
+    }
+} 
+
 @media screen and (max-width:768px){
     .logo{
         width: 200px;
@@ -562,15 +600,29 @@ footer>.link{
         height: 100%;}
     .gnb{visibility: hidden;}
     .hamburger{visibility: visible;}
-    .main-section{
-        height: auto;
-        display: flex;
-        flex-direction: column;
+    .main-section>.img-slide{
+        margin-top: 60px;
     }
+    .slide-list{
+        height: auto;
+    }
+    .slide-wrap{
+        width: 100%;
+        height: auto;
+    }
+    .slide-list>.slide-item{
+        height: auto;
+        margin-bottom: -5px;
+    }
+    .controls{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-section>.button{
+        margin-top: 15px;}
     .main-section>.button button{
-        width: 300px;
-        height: 70px;
-        border-radius: 60px;
+        width: 225px;
+        height: 60px;
         font-size: 19px;
     }
     .quick-menu{

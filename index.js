@@ -5,15 +5,24 @@ let slideList = document.querySelector('.slide-list');
 slide1.addEventListener('click',function(){
     slideList.style.transform = "translateX(0)";
     slide1.style.background = 'var(--color-blue)';
+    slide2.style.background = '#727272';
     slide3.style.background = '#727272';
 });
 slide2.addEventListener('click',function(){
-    slideList.style.transform = "translateX(-550px)";
+    console.log(window.innerWidth);
+    if(window.innerWidth<550){
+        slideList.style.transform = `translateX(-${window.innerWidth}px)`;
+    }
+    else slideList.style.transform = "translateX(-550px)";
     slide2.style.background = "var(--color-blue)";
+    slide3.style.background = '#727272';
     slide1.style.background = '#727272';
 });
 slide3.addEventListener('click',function(){
-    slideList.style.transform = "translateX(-1100px)";
+    if(window.innerWidth<550){
+        slideList.style.transform = `translateX(-${window.innerWidth * 2}px)`;
+    }
+    else slideList.style.transform = "translateX(-1100px)";
     slide3.style.background = 'var(--color-blue)';
     slide1.style.background = '#727272';
     slide2.style.background = '#727272';
