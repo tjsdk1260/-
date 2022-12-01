@@ -334,7 +334,7 @@ a{text-decoration: none;}
     
 }
 .board{
-    width: 660px;
+    width: 610px;
     height: 380px;
     background-color: #fff;
     border: 1px solid #eee;
@@ -365,6 +365,9 @@ a{text-decoration: none;}
 }
 .board-title.active::before{
     transform: scaleX(1);
+}
+.board-title:hover{
+    color: #000;
 }
 .board-title>a,
 .board-item>li>a{
@@ -647,12 +650,33 @@ footer>.link{
     .wrap{flex-direction: column;
         height: auto;
     }
+    .search{
+        height: 85px;
+        line-height: 85px;}
+    .search input[type="text"]{
+        width: 70%;
+        height: 35px;
+        padding: 6px;
+        font-size: 16px;
+    }
+    .search input[type='text']::placeholder{
+        font-size: 14px;
+    }
+    .search button{
+        width: 35px;
+        height: 35px;
+    }
     .board{
-        width:350px;}
+        width:363px;
+         height: 320px;}
     .board-list{
         padding: 15px;}
     .board-title{
-        font-size: 14px;}
+        margin-right: 3px;
+        font-size: 13px;}
+    .board-title:last-child{
+        margin-right: 0;
+    }
     .board-item>li{
         padding-top: 9px;
         padding-bottom: 9px;
@@ -667,17 +691,16 @@ footer>.link{
         margin-top: 25px;
     }
     .sns{
-        width: 350px;
-        height: 350px;
+        width: 363px;
+        height: 363px;
         margin-left: 0;}
     .video>iframe{
-        width:350px;
+        width:363px;
     }
     .imglink-list{overflow-x: scroll;}
-    footer>.link{
-        padding: 15px 2px;
+    .link-list{
+        margin: 0 auto;
     }
-    .link-list{margin-left: 19px;}
     .link-list>.link-item{
         margin-left: 5px;}
     .link-list>.link-item>a{
@@ -691,7 +714,6 @@ footer>.link{
     }
     .footer-wrap{
         position: relative;
-        padding: 25px 0 50px 40px;
     }
     .footer-logo{
         position: absolute;
