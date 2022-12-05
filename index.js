@@ -10,7 +10,7 @@ slide1.addEventListener('click',function(){
 });
 slide2.addEventListener('click',function(){
     console.log(window.innerWidth);
-    if(window.innerWidth<550){
+    if(window.innerWidth<768){
         slideList.style.transform = `translateX(-${window.innerWidth}px)`;
     }
     else slideList.style.transform = "translateX(-550px)";
@@ -19,7 +19,7 @@ slide2.addEventListener('click',function(){
     slide1.style.background = '#727272';
 });
 slide3.addEventListener('click',function(){
-    if(window.innerWidth<550){
+    if(window.innerWidth<768){
         slideList.style.transform = `translateX(-${window.innerWidth * 2}px)`;
     }
     else slideList.style.transform = "translateX(-1100px)";
@@ -73,23 +73,38 @@ function moveSlide(num){
     currentIdx = num;
 };
 
+function showSlide(){
+    let windowWidth = window.innerWidth;
+    if(windowWidth<500){
+        return 1;
+    }else if(windowWidth<768){
+        return 2;
+    }else if(windowWidth<1010){
+        return 3;
+    }else if(windowWidth<1280){
+        return 4;
+    }else{
+        return 5;
+    }
+}
+
 preBtn.addEventListener('click',function(){
     if(currentIdx > 0){
         moveSlide(currentIdx - 1);
     }else{
-        moveSlide(slideCount -5);
+        moveSlide(slideCount -showSlide());
     }
    
 });
 
 nextBtn.addEventListener('click',function(){
-    if(currentIdx < slideCount - 5){
+    if(currentIdx < slideCount - showSlide()){
         moveSlide(currentIdx + 1);
     }else{
         moveSlide(0);
     }
-   
 });
+//1280px 4개 1010px 3개 768px 2개 500px 1개
 //부서안내 슬라이드
 const goTop = document.querySelector('.go-top');
 
