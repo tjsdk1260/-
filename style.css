@@ -460,7 +460,7 @@ a{text-decoration: none;}
 .department-list>li>h3::before{
     content: "";
     display: block;
-    width: 80px;
+    width: 85px;
     height: 2.5px;
     background-color: var(--color-blue);
     margin-top: 25px;
@@ -492,10 +492,10 @@ a{text-decoration: none;}
     cursor: pointer;
 }
 .pre{
-    left: 70px;
+    left: 50px;
 }
 .next{
-    right: 70px;
+    right: 50px;
 }
 .img-link{
     margin-top: 35px;
@@ -711,6 +711,7 @@ footer>.link{
     .search button{
         width: 35px;
         height: 35px;
+        color: #000;
     }
     .department-wrapper{
         width: 490px;
