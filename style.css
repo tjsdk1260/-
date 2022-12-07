@@ -633,6 +633,7 @@ footer>.link{
         margin-right: 0;
     }
     .board-item>li{
+        width: 330px;
         padding-top: 9px;
         padding-bottom: 9px;
     }
@@ -723,6 +724,9 @@ footer>.link{
         margin: 0 auto;
         display: flex;
         justify-content: center;
+    }
+    .link-list>.link-item:first-child{
+        margin-left: 0;
     }
     .link-list>.link-item{
         margin-left: 12px;}
